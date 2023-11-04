@@ -1,0 +1,80 @@
+web safe fonts list
+https://blog.hubspot.com/website/web-safe-html-css-fonts
+https://kinsta.com/blog/web-safe-fonts/
+
+html color generator 
+https://htmlcolorcodes.com/
+
+html entities list 
+https://unicode-table.com/en/html-entities/
+https://www.htmlsymbols.xyz
+
+FOR ICONS
+https://www.iconfinder.com/
+
+for images
+gettyimages.com 
+
+for mime type in accept attribute of html tag 
+https://www.iana.org/assignments/media-types/media-types.xhtml#application
+
+
+for random images 
+https://picsum.photos/
+example 
+ <img src="https://picsum.photos/300" />
+
+ for box shadow example 
+ https://getcssscan.com/css-box-shadow-examples
+
+for color pallets 
+https://colorhunt.co/
+
+
+ for html, css, javascript 
+ https://developer.mozilla.org
+
+ for css 
+ https://developer.mozilla.org/en-US/docs/Web/CSS
+
+for web fonts
+ https://fonts.google.com/
+
+bootstrap official website 
+https://getbootstrap.com/
+
+for cheetsheet
+https://bootstrap-cheatsheet.themeselection.com/
+
+for readymade snippets
+https://www.codehim.com/category/bootstrap/
+
+for images 
+www.gettyimages.in 
+https://downloader.la/gettyimages-downloader.html
+
+
+https://www.istockphoto.com
+
+for font icons 
+https://fontawesome.com/icons   
+
+for online photoshop 
+https://www.photopea.com/
+
+for free map 
+https://www.openstreetmap.org
+
+for gallary 
+http://fancybox.net/home
+
+
+to convert file from one format to another format
+online-convert.com
+
+https://caniuse.com/
+
+http://html5test.com/
+
+to create temporary email address
+https://temp-mail.org/en/

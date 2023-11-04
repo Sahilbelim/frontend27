@@ -1,0 +1,20 @@
+how we can accept input from user in html 
+Types of input 
+    text 
+        type of text input 
+            single line input 
+                email,password,mobile,name,city,pincode,amount are some example of single line input 
+            multiline input 
+                address, email content, feedback are some example of multiline input 
+            choice based input 
+                radio button, checkbox, list(single & multiselect), buttons 
+                gender, hobbies, country,language,
+    binary(file)
+        photo,document,zip etc (any type of file)
+there are only 3 tags we used to take any type of input from user 
+input tag 
+    single line input & choice & binary  can be taken from user using input tag 
+select tag 
+    some choice based input (list) can be accept from user using select tag 
+textarea tag 
+    multiline can be accepted using textarea
