@@ -1,1 +1,11 @@
-create html page to display your bio-data.
+create html page to display your bio-data
+
+create html page that will display mans indian cricket team player name, match, runs, 50s, 100s, 200s average in html table 
+
+create html page that will all icc mans cricket team name as list. and each list has player names as nested list 
+
+create html page that will display mans cricket team player photo and thier name. display 3 player per row. 
+
+create html horizontal form to search bus as per https://gsrtc.in/site/
+
+create vertical form to register in facebook as per https://www.facebook.com/ register 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Register</h1>
+    <hr />
+    <form action="success.html" method="post" enctype="multipart/form-data">
+        <table align="center" border="2" cellpadding="10" width="50%">
+            <tr>
+                <td>
+                    Enter full name
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="fullname" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter birthdate
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="date" name="birthdate" required />
+                </td>
+            </tr> 
+            <tr>
+                <td>Select gender</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="male" required /> male
+                    </label>
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="female" required /> female
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    enter income
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="income" id="income" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Enter mobile</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="tel" name="mobile" id="mobile" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    select photo
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="file" name="photo" id="photo" accept="image/*"  />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select language you can speak, read & write 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gujarati">
+                        <input type="checkbox" name="gujarati" id="gujarati" value="1" /> Gujarati 
+                    </label><br/>
+                    <label for="hindi">
+                        <input type="checkbox" name="hindi" id="hindi" value="2" /> Hindi <br/>
+                    </label>
+                    <label for="english">
+                        <input type="checkbox" name="english" id="english" value="3" /> English <br/>
+                    </label><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    select city
+                </td>
+            </tr>
+            <tr>
+               <td>
+                <select name="city" id="city">
+                    <option value="">select</option>
+                    <option value="1">Bhavnagar</option>
+                    <option value="2">Baroda</option>
+                    <option value="3">Rajkot</option>
+                </select>
+               </td>
+            </tr>
+            <tr>
+                <td>
+                    enter your address
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="address" id="address" cols="60" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" id="submit" value="Save" />
+                    <input type="reset" name="reset" id="reset" value="clear all" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
