@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 1</title>
+</head>
+<body>
+       <center>
+        <h1>
+            html 5 lesson 1
+        </h1>
+       </center>
+
+      <big>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In et neque consectetur quod non minima sequi vel ad minus,
+            maxime dignissimos rem nam corrupti at, totam dicta repudiandae aut reiciendis! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ratione vero eligendi commodi expedita, debitis ipsa rem veritatis eaque, accusantium
+            labore, sunt obcaecati quas dicta. Perferendis, asperiores unde molestias veniam velit iure deserunt consequuntur
+            autem! Blanditiis saepe nisi, tempore similique nam neque delectus quo enim repellendus, corrupti quos porro
+            doloremque consectetur.
+        
+        </p>
+      </big>
+
+      <tt>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, consequatur earum! Modi nulla blanditiis tenetur hic porro ab, possimus doloremque pariatur placeat quibusdam dolores quam sed at tempora fugiat impedit, atque minima et necessitatibus dolor! Harum fugit dolores tempore eveniet tenetur laboriosam natus magni nisi porro voluptatibus eaque suscipit, enim, placeat accusantium facere animi sunt inventore ut. Quaerat iure deleniti excepturi! Dolor, obcaecati veniam qui neque sint rerum ad exercitationem!</tt>
+
+    <p>
+        <u>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, temporibus?</u>
+    </p>
+</body>
+</html>
