@@ -10,18 +10,18 @@
 
     <main>
         <center>
-           <form action="./lesson10.html">
+           <form action="./lesson10.html" autocomplete="on" novalidate >
             <table border="" width="30%">
                 <tr>
                     <td><label for="username">Enter Name </label></td>
-                    <td width="30%"><input id="username" type="text"></td>
+                    <td width="30%"><input id="username" type="text" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td>
                         <label for="useremail">Enter Email </label>
                     </td>
                     <td>
-                        <input type="email" id="useremail">
+                        <input type="email" id="useremail" required   >
                     </td>
             
                 </tr>
@@ -30,7 +30,7 @@
                         <label for="password">Enter Password </label>
                     </td>
                     <td>
-                        <input type="password" id="password">
+                        <input type="password" id="password" required>
                     </td>
             
                 </tr>
@@ -39,7 +39,7 @@
                         <label for="Cpassword">Confirm Password </label>
                     </td>
                     <td>
-                        <input type="password" id="Cpassword">
+                        <input type="password" id="Cpassword" required>
                     </td>
             
                 </tr>
@@ -57,7 +57,7 @@
                         <label for="date">Enter Date</label>
                     </td>
                     <td>
-                        <input type="date" id="date">
+                        <input type="date" id="date" required>
                     </td>
                 </tr>
                 <tr>
@@ -76,15 +76,79 @@
                         <input type="datetime-local" id="datetimeL">
                     </td>
                 </tr>
-            
+                <tr>
+                    <td>
+                        <label for="month">Enter month</label>
+                    </td>
+                    <td><input type="month" id="month"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="number1">Enter Number</label>
+                    </td>
+                    <td>
+                        <input type="number" id="number1" required>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="range1">Enter range</label>
+                    </td>
+                    <td>
+                        <input type="range" id="range1" >
+                    </td>
+                </tr>
+                <tr><td>
+                    <label for="mobile">Enter Mobile No.:</label>
+                </td>
+                <td>
+                    <input type="tel" id="mobile">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="time">Enter Time </label>
+                </td>
+                <td>
+                    <input type="time" id=time>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="url1">Enter url</label>
+                </td>
+                <td>
+                    <input type="url" id="url1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="week"> Enter Week </label>
+                </td>
+                <td>
+                    <input type="week"  id="week">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="search">Search </label></td>
+                <td>
+                    <input type="search"  id="search">
+                </td>
+            </tr>
                 <tr>
                     <td colspan="2">
                         <center>
+                            <input type="button" value="Normal button">
                             <input type="submit" value="submit">
                             <input type="reset" value="Clear All">
                         </center>
                     </td>
                 </tr>
+              
+                
             </table>
            </form>
         </center>
