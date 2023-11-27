@@ -10,18 +10,18 @@
 
     <main>
         <center>
-           <form action="./lesson10.html" autocomplete="on" novalidate >
+           <form action="./lesson10.html" autocomplete="on"  >
             <table border="" width="30%">
                 <tr>
                     <td><label for="username">Enter Name </label></td>
-                    <td width="30%"><input id="username" type="text" autocomplete="off"></td>
+                    <td width="30%"><input id="username" type="text" autocomplete="off" ></td>
                 </tr>
                 <tr>
                     <td>
                         <label for="useremail">Enter Email </label>
                     </td>
                     <td>
-                        <input type="email" id="useremail" required   >
+                        <input type="email" id="useremail" required   autofocus>
                     </td>
             
                 </tr>
@@ -87,7 +87,7 @@
                         <label for="number1">Enter Number</label>
                     </td>
                     <td>
-                        <input type="number" id="number1" required>
+                        <input type="number" id="number1" required min="1000000000" max="9999999999">
                     </td>
 
                 </tr>
@@ -96,7 +96,7 @@
                         <label for="range1">Enter range</label>
                     </td>
                     <td>
-                        <input type="range" id="range1" >
+                        <input type="range" id="range1" min="0" max="10">
                     </td>
                 </tr>
                 <tr><td>
@@ -133,16 +133,40 @@
                 </td>
             </tr>
             <tr>
+                <td>
+                    <label for="week"> Enter file </label>
+                </td>
+                <td>
+                    <input type="file" id="week" multiple>
+                </td>
+            </tr>
+            <tr>
                 <td><label for="search">Search </label></td>
                 <td>
                     <input type="search"  id="search">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cardno">Emter Adhar  No.:</label>
+                </td>
+                <td>
+                    <input type="text" id="cardno" pattern="[0-9]{4} *[0-9]{5} *[0-9]{5}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cardno">Emter PAN No.:</label>
+                </td>
+                <td>
+                    <input type="text" id="cardno" pattern="[A-Z]{5} *[0-9]{4} *[A-Z]{1}">
                 </td>
             </tr>
                 <tr>
                     <td colspan="2">
                         <center>
                             <input type="button" value="Normal button">
-                            <input type="submit" value="submit">
+                            <input type="submit" value="submit" formaction="./lesson12.html">
                             <input type="reset" value="Clear All">
                         </center>
                     </td>
