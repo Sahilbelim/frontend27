@@ -30,14 +30,15 @@
         }
         .nav-item {
             /* border: 2px solid red; */
-            padding: 10px;
+            padding: 8px;
+            font-size: 25px;
             font-family: 'baloo tamma 2', sans-serif;
             text-transform: capitalize;
             font-weight: 500;
         }
 
         h1.nav-item {
-            margin-right: 700px;
+            margin-right: 600px;
             font-size: 50px;
             text-transform: lowercase;
             font-family: 'baloo tamma 2', sans-serif;
@@ -68,11 +69,79 @@
              border-radius: 10px;
              border: none;
              margin-left: 50px;
+             font-size: 25px;
+             font-weight: bold;
         }
        .btn>a
         {
              color: aliceblue;
         }
+        #topicTitle
+        {
+            /* border: 2px solid red; */
+            margin: 100px;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+        .p_card
+        {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            
+            margin-bottom: 20px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        .card
+        {
+            margin-top: 20px; 
+            /* border: 2px solid red; */
+            width: 30%;
+            margin-left: 20px;
+            border-radius: 20px;
+            background-color: aliceblue;
+
+        }
+        .img-card
+        {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+        .card-title
+        {
+            padding: 20px 0px 0px 30px;
+               font-family: 'baloo tamma 2', sans-serif;
+               /* border: 2px solid red; */
+        }
+        .card>p
+        {   
+            padding: 20px;
+            font-family: 'Roboto',sans-serif;
+        }
+        .card>footer
+        {
+            border-top: 2px solid rgba(128, 128, 128, 0.618);
+            display: flex;
+            
+        }
+        .card>footer>h4
+        {
+          
+            /* align-items: center; */
+            /* border: 2px solid red; */
+            font-size: 19px;
+            padding: 30px 0px 30px 5px ;
+            }
+            .card>footer>img
+            {
+               
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin: 20px;
+            }
     </style>
 </head>
 
@@ -91,7 +160,51 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+
+
+    <main>
+        <header>
+            <h1 id="topicTitle">Technology Trends</h1>
+        </header>
+
+        <section></section>
+
+        <section>
+            <div class="p_card">
+               
+                <div class="card">
+                    <img src="https://picsum.photos/400/300" alt="" class="img-card">
+                    <h3 class="card-title">Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia tenetur architecto placeat, temporibus ipsa minus,
+                        corrupti autem cumque odit doloremque nemo rerum accusantium! Tenetur, ad.</p>
+                    <footer>
+                        <img src="https://picsum.photos/50/50" alt="">
+                        <h4>user name</h4>
+                    </footer>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/400/300" alt="" class="img-card">
+                    <h3 class="card-title">Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia tenetur architecto placeat, temporibus ipsa minus,
+                        corrupti autem cumque odit doloremque nemo rerum accusantium! Tenetur, ad.</p>
+                    <footer>
+                        <img src="https://picsum.photos/50/50" alt="">
+                        <h4>user name</h4>
+                    </footer>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/400/300" alt="" class="img-card">
+                    <h3 class="card-title">Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia tenetur architecto placeat, temporibus ipsa minus,
+                        corrupti autem cumque odit doloremque nemo rerum accusantium! Tenetur, ad.</p>
+                    <footer>
+                        <img src="https://picsum.photos/50/50" alt="">
+                        <h4>user name</h4>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
