@@ -5,17 +5,26 @@
 
   .navbar {
       /* border: 2px solid red; */
-      /* margin: 20px; */
-      display: flex;
+      
       list-style: none;
       align-items: center;
-
-  }
-
-  header.menu {
+      display: flex;
+      
+      
+    }
+    
+    header.menu {
+        width: 100%;
+      
+        position: fixed;
       background: aliceblue;
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   }
 
+  .manuspace{
+    width: 100%;
+    height: 120px;
+  }
   .nav-item {
       /* border: 2px solid red; */
       padding: 8px;
@@ -65,3 +74,92 @@
   .btn>a {
       color: aliceblue;
   }
+
+
+  /* single blog page css start */
+        .blogTitle {
+            /* text-align: center; */
+            margin-top: 10px;
+            font-family: 'baloo tamma 2', sans-serif;
+    
+        }
+    
+        .blog {
+            width: 68%;
+            margin-bottom: 200px;
+            margin-left: 200px;
+            margin-right: 200px;
+            /* border: 2px solid blueviolet; */
+            padding: 20px;
+        }
+    
+        p {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+            color: gray;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+    
+        }
+    
+        .userD {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .icon-users {
+            display: flex;
+            width: 15%;
+    
+        }
+    
+        .icon-user {
+            width: 80%;
+            margin: 2px;
+        }
+    
+        .icon-user-div {
+            width: 100%;
+            margin: 10px;
+        }
+    
+        .user-img {
+            width: 100%;
+            display: flex;
+            margin-bottom: 20px;
+    
+        }
+    
+        .user-img>img {
+            border-radius: 30px;
+        }
+    
+        .user-img>h4 {
+            margin: 18px;
+            font-size: 20px;
+            align-items: center;
+        }
+    
+        .blog-title {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    
+        .blog-footer>center>button {
+            border: none;
+            background: #fff;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 50px;
+            margin-top: 20px;
+            font-weight: 700;
+    
+        }
+    
+        .blog-footer>center>button:hover {
+    
+            border: 2px dashed gray;
+        }
+  /* single blog page css  end*/
