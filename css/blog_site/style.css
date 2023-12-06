@@ -163,3 +163,59 @@
             border: 2px dashed gray;
         }
   /* single blog page css  end*/
+
+  /* footer start */
+  .main_f
+  {
+
+      background-color: #E0CEE8;
+   
+  }
+.f_p
+
+{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+ul.f_ul
+{
+    list-style: none;
+}
+ul.f_ul>li
+{
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+ul.f_ul>li>a
+{
+    text-decoration: none;
+    color: black;
+}
+ul.f_ul>li>a:hover{
+    color: #fff;
+}
+.f_p>div>h3
+{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.f_content
+{
+
+}
+.f_c
+{
+    padding: 20px 20px 20px 50px;
+    text-transform: capitalize;
+}
+.f_smicon>a
+{
+    width: 25%;
+    padding: 10px 10px 0px 0px;
+}
+.f_smicon>a>img
+{
+    width: 30px;
+}
+  /* footer End */
