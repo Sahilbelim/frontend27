@@ -219,3 +219,53 @@ ul.f_ul>li>a:hover{
     width: 30px;
 }
   /* footer End */
+
+.form-card
+{
+    min-height: 300px;
+    width: 30%;
+    /* border: 2px solid black; */
+    margin: 100px 0 0 500px;
+    border-radius: 20px;
+    background-color: #F0F8FF;
+    font-family: 'baloo tamma 2', sans-serif;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}  
+.form-card>h1
+{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+.form-card>form{
+    
+   
+    /* border: 2px solid red; */
+    margin: 20px;
+    padding: 10px;
+}
+.form-item
+{
+    margin:20px 0 20px 0;
+   /* border: 2px solid black; */
+   display: flex;
+   justify-content: space-between;
+
+}
+.form-item>input
+{
+    width: 220px;
+    height: 30px;
+    border: 1px solid #8560A9;
+    border-radius: 15px;
+}
+.m-3
+{
+    margin: 20px 0 30px 130px;
+}
+.btn:hover
+{
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
