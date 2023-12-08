@@ -269,3 +269,154 @@ ul.f_ul>li>a:hover{
 {
         box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+.p_homeHeader
+{
+    display: flex;
+}
+.l_homeHeader
+{
+    width: 60%;
+    padding: 100px 60px 0 60px;
+    /* border: 2px solid red; */
+}
+.r_homeHeader
+{
+    /* border: 2px solid red; */
+    width: 40%;
+    padding: 100px;
+}
+.l_homeHeader>h1{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.l_homeHeader>p
+{
+    margin-bottom: 40px;
+}
+.homeHeader_btn>button
+{
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 7px 20px 7px 20px ;
+    border-radius: 10px;
+    background-color: #F0F8FF;
+    color: #8560A9;
+}
+.homeHeader_btn>button:hover
+{
+    background-color:#8560A9 ;
+        color: #F0F8FF;
+}
+
+/* card start  */
+        #topicTitle {
+            /* border: 2px solid red; */
+            /* margin: px; */
+            text-align: center;
+            background: url(./img/blog_thamnail-transformed.png);
+            background-size: 1600px 300px;
+            background-repeat: no-repeat;
+            padding: 120px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+    
+        section#cards {
+            justify-content: center;
+        }
+    
+        .p_card {
+    
+            /* border: 2px solid black; */
+            width: 90%;
+            margin: 80px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+        .card:hover {
+            margin-top: 40px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+        }
+    
+        .card {
+            margin-top: 50px;
+            /* border: 2px solid red; */
+            width: 25%;
+            margin-left: 20px;
+            border-radius: 20px;
+            background-color: aliceblue;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    
+        .img-card {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+    
+        a>.card-title {
+            padding: 20px 0px 0px 30px;
+            font-family: 'baloo tamma 2', sans-serif;
+            color: black;
+            /* border: 2px solid red; */
+        }
+    
+        .card>a>p {
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+        }
+    
+        .card>footer {
+            border-top: 2px solid rgba(128, 128, 128, 0.618);
+            display: flex;
+    
+        }
+    
+        .card>footer>h4 {
+    
+            /* align-items: center; */
+            /* border: 2px solid red; */
+            font-size: 19px;
+            padding: 30px 0px 30px 5px;
+        }
+    
+        .card>footer>img {
+    
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        /* card end */
+
+        address
+        {
+            padding: 30px;
+            font-style:normal;
+            color: gray;
+        }
+        .my-icon
+        {
+            width: 40px;
+            height: 40px;
+        }
+        .m-2
+        {
+            margin: 20px;
+        }
+        .icon-text
+        {
+            padding: 30px 0 0 0;
+        }
+        .card>a>div
+        {
+            display: flex;
+        }
