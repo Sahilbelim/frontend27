@@ -3,30 +3,31 @@
       padding: 0;
   }
 
-  /* .navbar {
-      border: 2px solid red;
-      
+  .navbar {
+      /* border: 2px solid red; */
+
       list-style: none;
       align-items: center;
-      display: flex;
-      
-      
-    }
-    
-    header.menu {
-        width: 100%;
-      
-        position: fixed;
-      background: aliceblue;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+      /* display: flex; */
+
+
   }
 
-  .manuspace{
-    width: 100%;
-    height: 120px;
+  header.menu {
+      width: 100%;
+
+      position: fixed;
+      background: aliceblue;
+      /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   }
+
+  .manuspace {
+      width: 100%;
+      height: 120px;
+  }
+
   .nav-item {
-      border: 2px solid red;
+      /* border: 2px solid red; */
       padding: 8px;
       font-size: 25px;
       font-family: 'baloo tamma 2', sans-serif;
@@ -35,7 +36,7 @@
   }
 
   h1.nav-item {
-      margin-right: 600px;
+      /* margin-right: 400px; */
       font-size: 50px;
       text-transform: lowercase;
       font-family: 'baloo tamma 2', sans-serif;
@@ -73,39 +74,45 @@
 
   .btn>a {
       color: aliceblue;
-  } */
- .navbar {
-     /* border: 2px solid red; */
+  }
 
-     list-style: none;
-     align-items: center;
-     /* display: none; */
-    background-color: #fff;
+  .navbar {
+      /* border: 2px solid red; */
+
+      list-style: none;
+      align-items: center;
+      /* display: none; */
+      /* background-color: #fff; */
 
 
- }
+  }
+
   nav {
       display: flex;
-      justify-content: space-between;
+      /* justify-content: space-between; */
   }
 
   h1.nav-item {
       margin-top: 20px;
   }
 
-  .drop-down>img {
+  .drop-downbtn>img {
       width: 50px;
-      height: 30px;
+      height: 50px;
       margin: 0;
-  }
-
-  .drop-down {
-    margin-top: 20px;
-    margin-right: 20px;
+    }
+    
+    .drop-downbtn {
+        margin-top: 35px;
+        background-color: #8560A9;
+      margin-right: 20px;
       width: 50px;
       height: 50px;
       padding: 0;
       display: none;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 5px 5px 20px #F1C3E0;
   }
 
   /* single blog page css start */
@@ -233,7 +240,7 @@
       padding-bottom: 20px;
   }
 
-  .f_content {}
+  /* .f_content {} */
 
   .f_c {
       padding: 20px 20px 20px 50px;
@@ -380,7 +387,7 @@
   .card {
       margin-top: 50px;
       /* border: 2px solid red; */
-     
+
       margin-left: 20px;
       border-radius: 20px;
       background-color: aliceblue;
@@ -456,237 +463,83 @@
 
   /* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
   @media (min-width: 1281px) {
-    .card
-    {
-        width: 25%;
-    }
-      .my-link {
-          color: #fff;
-          background-color: #551A8B;
-          padding: 10px;
-      }
-
-      .navbar {
-          /* border: 2px solid red; */
-
-          list-style: none;
-          align-items: center;
-          display: flex;
-
-
-      }
-
-      header.menu {
-          width: 100%;
-
-          position: fixed;
-          background: aliceblue;
-          /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
-      }
-
-      .manuspace {
-          width: 100%;
-          height: 120px;
-      }
-
-      .nav-item {
-          /* border: 2px solid red; */
-          padding: 8px;
-          font-size: 25px;
-          font-family: 'baloo tamma 2', sans-serif;
-          text-transform: capitalize;
-          font-weight: 500;
+      .card {
+          width: 25%;
       }
 
       h1.nav-item {
           margin-right: 600px;
-          font-size: 50px;
-          text-transform: lowercase;
-          font-family: 'baloo tamma 2', sans-serif;
+
       }
 
-      .img-logo {
-          width: 90px;
-          height: 120px;
-          margin-left: 20px;
+      .navbar {
+          display: flex;
       }
-
-      li.nav-item {
-          margin: 10px;
-      }
-
-      a {
-          text-decoration: none;
-      }
-
-      .nav-item>a {
-          color: #551A8B;
-      }
-
-      .btn {
-          padding: 7px 20px;
-          background: #8560a9;
-          font-family: 'baloo tamma 2', sans-serif;
-          color: aliceblue;
-          border-radius: 10px;
-          border: none;
-          margin-left: 50px;
-          font-size: 25px;
-          font-weight: bold;
-      }
-
-      .btn>a {
-          color: aliceblue;
-      }
-
-      /* code in this block will be applied only if device width>1281 */
-
   }
 
   /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
   @media (min-width: 1025px) and (max-width: 1280px) {
-      .my-link {
-          color: #fff;
-          background-color: #1a878b;
-          padding: 5px;
-      }
 
-      .navbar {
-          /* border: 2px solid red; */
-
-          list-style: none;
-          align-items: center;
-          display: flex;
-
-
-      }
-
-      nav {
-          display: flex;
-      }
-
-      header.menu {
-          width: 100%;
-
-          position: fixed;
-          background: aliceblue;
-          /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
-      }
-
-      .manuspace {
-          width: 100%;
-          height: 120px;
-      }
-
-      .nav-item {
-          /* border: 2px solid red; */
-          padding: 8px;
-          font-size: 25px;
-          font-family: 'baloo tamma 2', sans-serif;
-          text-transform: capitalize;
-          font-weight: 500;
+      .card {
+          width: 25%;
       }
 
       h1.nav-item {
-          margin-right: 600px;
-          font-size: 50px;
-          text-transform: lowercase;
-          font-family: 'baloo tamma 2', sans-serif;
+          margin-right: 190px;
+
       }
 
-      .img-logo {
-          width: 90px;
-          height: 120px;
-          margin-left: 20px;
+      .navbar {
+          display: flex;
       }
-
-      li.nav-item {
-          margin: 10px;
-      }
-
-      a {
-          text-decoration: none;
-      }
-
-      .nav-item>a {
-          color: #551A8B;
-      }
-
-      .btn {
-          padding: 7px 20px;
-          background: #8560a9;
-          font-family: 'baloo tamma 2', sans-serif;
-          color: aliceblue;
-          border-radius: 10px;
-          border: none;
-          margin-left: 50px;
-          font-size: 25px;
-          font-weight: bold;
-      }
-
-      .btn>a {
-          color: aliceblue;
-      }
-.card
-{
-    width: 25%;
-}
-      /* code in this block will be applied only if device width>1025 and <1280 */
   }
 
   /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
   @media (min-width: 768px) and (max-width: 1024px) {
 
-      /* code in this block will be applied only if device width>768 and <1024 */
-
-      .my-link {
-          color: #fff;
-          background-color: #bd4224;
-          padding: 3px;
-      }
-
-     
-
-      header.menu {
-          width: 100%;
-
-          position: fixed;
-          background: aliceblue;
-          /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+      .navbar {
+          display: none;
       }
 
       h1.nav-item {
-          margin-right: 200px;
-          font-size: 50px;
-          text-transform: lowercase;
-          font-family: 'baloo tamma 2', sans-serif;
+          margin-right: 500px;
+
       }
 
-      .img-logo {
-          width: 90px;
-          height: 120px;
-          margin-left: 20px;
+      .drop-downbtn {
+
+          display: block;
       }
 
-
-      .manuspace {
-          width: 100%;
-          height: 120px;
+      .card {
+          width: 45%;
       }
-      .drop-down
+      .hide
       {
-        display: block;
+        display: none;
       }
-        .navbar .drop-down:hover 
-      {
+     .dropdown:hover .hide
+     {
         display: block;
-        background-color: red;
-      }
-
-          .card {
-              width: 45%;
-          }
+     }
+     .navbar
+     {
+        margin-top: 20px;
+        width: 100%;
+        border: #8560A9 2px solid;
+        border-radius: 20px;
+        padding-bottom: 20px;
+     }
+     .btn
+     {
+        margin-left: 10px;
+     }
+     .nav-item
+     {
+        border-bottom: 2px solid rgba(128, 128, 128, 0.259);
+     }
   }
+
 
   /* ##Device = Low Resolution Tablets,  ##Screen = B/w 481px to 767px */
   @media (min-width: 481px) and (max-width: 767px) {
@@ -695,6 +548,7 @@
           color: #fff;
           background-color: #bd249c;
           padding: 1px;
+          
       }
 
       /* code in this block will be applied only if device width>481 and <767 */
@@ -703,12 +557,9 @@
   /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */
   @media (min-width: 320px) and (max-width: 480px) {
 
-      .my-link {
-          display: none;
-      }
-      .card
-      {
-        width: 95%;
+
+      .card {
+          width: 95%;
       }
 
       /* code in this block will be applied only if device width>320 and <480 */
