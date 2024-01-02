@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- font awesome cdn start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn end -->
+</head>
+
+<body>
+    <h1 class="fw-bold text-center display-3">Horizontal Form With Boootstrap </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="card mt-5  border-0 shadow">
+                    <div class="card-body">
+                        <form action="lesson10.html" method="post" class="">
+                            <div class="form-group ">
+                                <label for="name">Name : </label>
+                                <input type="text" name="name" id="name" class="form-control my-2"
+                                    placeholder="Enter Name here....">
+                            </div>
+                            <div class="form-group ">
+                                <label for="email">Email : </label>
+                                <input type="email" name="email" id="email" class="form-control mt-2"
+                                    placeholder="Enter Your Email">
+                            </div>
+                            <div class="form-group ">
+                                <label for="password">Password : </label>
+                                <input type="password" name="password" id="password" class="form-control mt-2"
+                                    placeholder="Enter Password">
+                            </div>
+                            <div class="form-group ">
+                                <label for="c_password">Confirm Password : </label>
+                                <input type="password" name="c_password" id="c_password" class="form-control mt-2"
+                                    placeholder="Enter confirm password">
+                            </div>
+                            <div class="form-check my-2">
+                                <input class="form-check-input" type="checkbox" name="html" id="html" >
+                                <label class="form-check-label" for="html">HTML</label>
+                            </div>
+                            <div class="form-check my-2">
+                                <input class="form-check-input" type="checkbox" name="css" id="css">
+                                <label class="form-check-label" for="css">CSS</label>
+                            </div>
+                            <div class="form-check my-2">
+                                <input class="form-check-input" type="checkbox" name="js" id="js">
+                                <label class="form-check-label" for="js">JS</label>
+                            </div>
+                            <label for="">slect Gender</label>
+                            <div class="form-check my-2">
+                                <input class="form-check-input" type="radio" name="gender" id="male">
+                                <label class="form-check-label" for="male">male</label>
+                            </div>
+                            <div class="form-check my-2">
+                                <input class="form-check-input" type="radio" name="gender" id="female">
+                                <label class="form-check-label" for="female">female</label>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                                <button type="reset" class="btn btn-danger">Clear All</button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

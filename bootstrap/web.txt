@@ -1,0 +1,71 @@
+  Ecommerce Website : 
+  
+  1.  Homepage:
+        Featured products or promotions.
+        Navigation menu.
+        Search bar.
+        Special offers or announcements.
+
+  2.  Product Pages:
+        Individual pages for each product.
+        Product images.
+        Product descriptions.
+        Pricing and availability.
+        Add to cart and purchase options.
+
+  3.  Category Pages:
+        Pages that group related products together.
+        Filters for refining product listings.
+
+  4.  Shopping Cart:
+        List of selected products.
+        Subtotal and total cost.
+        Options to update quantities or remove items.
+        Proceed to checkout button.
+
+  5.  Checkout Process:
+        Shipping information.
+        Billing information.
+        Payment options.
+        Order summary.
+        Order confirmation page.
+
+  6.  Account/Profile Pages:
+        User account dashboard.
+        Order history.
+        Saved addresses or payment methods.
+        Account settings.
+
+  7.  Login/Registration Pages:
+        Login form.
+        Registration form.
+        Forgot password/reset password options.
+
+ 8.   About Us:
+        Information about the company.
+        Mission and values.
+        Team members.
+
+ 9.   Contact Us:
+        Contact form.
+        Customer support information.
+        Physical address and phone number.
+
+ 10.   Privacy Policy and Terms of Service:
+        Legal pages outlining user privacy and terms of service.
+
+ 11.   Blog/Content Pages:
+        If your e-commerce site includes a blog, there will be blog pages with articles and related content.
+
+ 12.   FAQ (Frequently Asked Questions):
+        A page addressing common customer questions.
+
+ 13.   Search Results Page:
+        Displaying search results when users utilize the search function.
+
+ 14.   404 Error Page:
+        A page displayed when a user tries to access a page that doesn't exist.
+
+ 15.   Confirmation and Thank You Pages:
+        Pages confirming order placement or other significant actions.
+        Thank you pages acknowledging user actions.

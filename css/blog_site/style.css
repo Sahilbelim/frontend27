@@ -259,6 +259,7 @@
   /* footer End */
 
   .form-card {
+   
       min-height: 300px;
       width: 30%;
       /* border: 2px solid black; */
@@ -375,7 +376,7 @@
       margin-bottom: 20px;
       /* border: 2px solid black; */
       display: flex;
-      justify-content: space-evenly;
+      /* justify-content: space-evenly; */
   }
 
   .card:hover {
@@ -463,8 +464,13 @@
 
   /* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
   @media (min-width: 1281px) {
+    .p_card
+    {
+        margin: 120px;
+    }
       .card {
           width: 25%;
+          margin: 30px;
       }
 
       h1.nav-item {
@@ -474,6 +480,7 @@
 
       .navbar {
           display: flex;
+          margin-top: 25px;
       }
   }
 
@@ -491,6 +498,7 @@
 
       .navbar {
           display: flex;
+        margin-top: 25px;
       }
   }
 
@@ -502,7 +510,7 @@
       }
 
       h1.nav-item {
-          margin-right: 500px;
+          margin-right: 550px;
 
       }
 
@@ -544,23 +552,103 @@
   /* ##Device = Low Resolution Tablets,  ##Screen = B/w 481px to 767px */
   @media (min-width: 481px) and (max-width: 767px) {
 
+    .p_card {
+            margin: 80px;
+        }
+    
+        .card {
+            width: 85%;
+            /* border:2px solid black; */
+        }
+
       .my-link {
           color: #fff;
           background-color: #bd249c;
           padding: 1px;
           
       }
+   .hide {
+       display: none;
+   }
 
+   .dropdown:hover .hide {
+       display: block;
+   }
+
+   .navbar {
+       margin-top: 20px;
+       width: 100%;
+       border: #8560A9 2px solid;
+       border-radius: 20px;
+       padding-bottom: 20px;
+   }
+
+   .btn {
+       margin-left: 10px;
+   }
+
+   .nav-item {
+       border-bottom: 2px solid rgba(128, 128, 128, 0.259);
+   }
+
+          h1.nav-item {
+              margin-right: 300px;
+    
+          }
+                   .drop-downbtn {
+        
+                       display: block;
+                   }
+   }
       /* code in this block will be applied only if device width>481 and <767 */
-  }
+  
 
   /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */
   @media (min-width: 320px) and (max-width: 480px) {
 
+    .p_card
+    {
+        margin: 40px;
+    }
 
       .card {
-          width: 95%;
+          width: 85%;
+          /* border:2px solid black; */
       }
+                .hide {
+                    display: none;
+                }
+        
+                .dropdown:hover .hide {
+                    display: block;
+                }
+        
+                .navbar {
+                    margin-top: 20px;
+                    width: 100%;
+                    border: #8560A9 2px solid;
+                    border-radius: 20px;
+                    padding-bottom: 20px;
+                }
+        
+                .btn {
+                    margin-left: 10px;
+                }
+        
+                .nav-item {
+                    border-bottom: 2px solid rgba(128, 128, 128, 0.259);
+                }
+        
+                h1.nav-item {
+                    margin-right: 100px;
+        
+                }
+        
+                .drop-downbtn {
+        
+                    display: block;
+                }
+                
 
       /* code in this block will be applied only if device width>320 and <480 */
   }

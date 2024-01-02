@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- font awesome cdn start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn end -->
+
+    <style>
+body{
+    height: 1200;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+h2{
+	font-family:"Voltaire";
+	text-transform:uppercase;
+	margin:0;
+}
+#scene{
+	background-color:#304056;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+.layer{
+	pointer-events: none;
+}
+.col {
+	display: inline-block;
+	/* float: left; */
+	overflow: hidden;
+	position: relative;
+	width:12.5%;
+	pointer-events: all;
+	overflow:initial;
+	margin:0 0 30px;
+}
+.layer.main{
+	width:150%;
+	position:absolute;
+	z-index:1;
+	padding:20px;
+}
+.col a{
+	display:block;
+	margin:15px;
+	overflow:hidden;
+	box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.37);
+}
+.col a .hover {
+	position: absolute;
+	top: 15px;
+	right:15px;
+	bottom:-15px;
+	left: 15px;
+	z-index: 1;
+	color: white;
+	background: -moz-linear-gradient(45deg, rgba(0,0,0,0.47) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.47) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(45deg, rgba(0,0,0,0.47) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78000000', endColorstr='#00000000',GradientType=1 );
+}
+.col a .hover:after{
+	content:'';
+	position:absolut;
+	top:0;
+	left:0;
+	z-index:1;
+	width:100%;
+	height:100%;
+	display:block;
+	background: rgb(235, 116, 152);
+	opacity:0;
+	transition:0.35s ease;
+}
+.col a .hover:hover:after{
+	opacity:0.85;
+	transition:0.35s ease;
+}
+.align-bottom {
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
+	z-index: 2;
+	padding: 15px 20px;
+}
+.bg-img{
+	padding:0px;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background-size:cover;
+	background-position:50% 50%;
+}
+
+@media only screen and (max-width:1200px){
+	.layer .col{
+		width:16.666%;
+	}
+	
+}
+@media only screen and (max-width:650px){
+	.layer .col{
+		width:25%;
+	}
+	
+}
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- 
+// Photos provided by Pexels.com: 
+High quality and completely free stock photos 
+licensed under the Creative Commons Zero (CC0) license. 
+-->
+
+<section id="scene" data-pointer-events="true" data-x-origin="0.5" data-y-origin="0.5" data-scalar-y="150.0"
+    data-scalar-x="100.0" data-friction-x="0.05" data-friction-y="0.05"
+    style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; height: 254px;">
+    <div class="layer main" data-depth="1.0"
+        style="transform: translate3d(-716px, -378px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px; height: 254px;">
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img1.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img2.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img3.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img4.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img5.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img6.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img7.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img8.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img9.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img11.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img1.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img2.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img3.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img4.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img5.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img6.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img1.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img2.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img3.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img4.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img5.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img6.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img7.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img8.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img9.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img11.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img1.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img2.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img3.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img4.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img5.jpg);"></div>
+            </a>
+        </div>
+        <div class="col" style="height: 127px;">
+            <a href="#" style="height: 127px;">
+                <div class="hover">
+                    <div class="pad align-bottom">
+                        <h2>Project Title</h2>
+                    </div>
+                    <div class="more"><i class="demo-icon icon-plus"></i></div>
+                </div>
+                <div class="bg-img" style="background-image:url(http://www.caseycallis.com/codepen/img6.jpg);"></div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+
+    var makeWinHeight = function () {
+        var vh = $(window).height();
+        var projects = vh / 2;
+        $('#scene, .layer.main').height(vh);
+        $('#scene .col a, #scene .col').height(projects);
+    }
+    $(document).ready(function () {
+        makeWinHeight();
+
+    });
+    $(window).resize(function () {
+        makeWinHeight();
+    });
+
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js"
+            integrity="sha512-ES/eSqVi/9sgeZfvunOto+gwgFGrD/hzi5UOJFDR1Me8acKSBJIb2Gk0IyKje2ZaX+OovAG2/bRzj/uBcNeesg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"
+                integrity="sha512-HVbKRNsAHzfQy6OTKHsyyjY/BtJMye7ZJSQoAxuCYn2wZYWXjaSU3GyJ3aMK5If1eJkLRadg789c9Ol+1dvzKw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.0/parallax.min.js"
+                    integrity="sha512-vS0dV6kxcESGshJ6anrXJFFNNtf9vXNZnsgnclUdV2tOzBZUsvGxnSj1NdKpgslLrsOe3ogFnQYHajyIH03Qcw=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
