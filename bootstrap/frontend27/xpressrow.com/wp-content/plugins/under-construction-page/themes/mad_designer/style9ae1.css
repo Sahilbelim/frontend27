@@ -1,0 +1,76 @@
+/*
+ * UnderConstructionPage
+ * Mad Designer theme CSS
+ * (c) WebFactory Ltd, 2015 - 2023
+ */
+
+
+html {
+   height: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #222222;
+  background: #d2d3d5; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #d2d3d5 0%, #e4e5e7 44%, #fafafa 80%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #d2d3d5 0%,#e4e5e7 44%,#fafafa 80%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #d2d3d5 0%,#e4e5e7 44%,#fafafa 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d3d5', endColorstr='#fafafa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#hero-image {
+  text-align: center;
+  margin: 20px auto 10px auto;
+}
+
+#hero-image img {
+  max-width: 80%;
+}
+
+h1 {
+  font-size: 34px;
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#social {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#social a i {
+  color: #23272a;
+  margin: 10px;
+  box-sizing: content-box;
+}
+
+#social a:hover i {
+  color: #e78967;
+}
+
+@media(max-width:767px){
+  h1 {
+     font-size: 30px;
+     margin: 10px 0 30px 0;
+  }
+  #hero-image img {
+    max-width: 95%;
+  }
+}
