@@ -1839,12 +1839,12 @@ input, textarea, select {
 	padding: 0px 8px;
 	border-bottom: none !important;
 }
-.cart_table th:nth-child(2), .cart_table th:nth-child(3), .cart_table th:nth-child(4), .cart_table td:nth-child(2), .cart_table td:nth-child(3), .cart_table td:nth-child(4) {
+/* .cart_table th:nth-child(2), .cart_table th:nth-child(3), .cart_table th:nth-child(4), .cart_table td:nth-child(2), .cart_table td:nth-child(3), .cart_table td:nth-child(4) {
 	width: 20%;
 }
 .cart_table th:nth-child(1), .cart_table td:nth-child(1) {
 	width: 40%;
-}
+} */
 .cart_table th, .cart_table td {
 	border: none;
 }

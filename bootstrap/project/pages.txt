@@ -1,11 +1,11 @@
 home 
 about us 
 contact us
-category
-menu 
-product 
-cart 
-wishlist 
+     category
+     menu 
+     product 
+     cart 
+     wishlist 
 checkout
           login
           register
