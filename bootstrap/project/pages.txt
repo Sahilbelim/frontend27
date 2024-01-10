@@ -1,13 +1,13 @@
-home 
-about us 
-contact us
+     home 
+     about us 
+     contact us
      category
      menu 
      product 
      cart 
      wishlist 
-checkout
-          login
-          register
-          change password
-          forgot password
+     checkout
+     login
+     register
+     change password
+     forgot password

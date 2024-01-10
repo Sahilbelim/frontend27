@@ -100,10 +100,10 @@
                     <div class="row">
                          <div class="col-lg-8">
                               <div class="page_title">
-                                   <h1>Menu Restaurant</h1>
+                                   <h1>Checkout</h1>
                                    <ul class="breadcrumb_nav ul_li">
                                         <li><a href="index.html">Home</a></li>
-                                        <li>Menu Restaurant</li>
+                                        <li>Checkout</li>
                                    </ul>
                               </div>
                          </div>
@@ -124,108 +124,101 @@
           </section>
           <!-- page title end -->
 
-          <!-- recipe menu start -->
-          <section class="recipe_menu_area pt-120 pb-120">
+          <!-- checkout start -->
+          <section class="checkout_area pt-120 pb-120">
                <div class="container">
-                    <div class="sec_title sec_title-2">
-                         <span>Choose and Try</span>
-                         <h2>From Our Menu</h2>
-                    </div>
                     <div class="row">
-                         <div class="col-l2">
-                              <div class="recipe_menu_wrap">
-                                   <div class="tab-content mt-70" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="tab-02" role="tabpanel"
-                                             aria-labelledby="nav-tab-02">
-                                             <div class="recipe_item">
-                                                  <div class="ri_img">
-                                                       <img src="theme/assets/img/shop/recipe-menu/rm_01.png" alt="">
-                                                  </div>
-                                                  <div class="ri_content">
-                                                       <div class="ri_text">
-                                                            <a href="product.html">
-                                                                 <h3>Amaricano Fast Food</h3>
-                                                            </a>
-                                                            <span>Rorem ipsum dolor sit amet, consect adipisicing elit,
-                                                                 sed do eiusmod tempor incididunt ut laborey.</span>
+                         <div class="col-12">
+                              <div class="checkout_wrap">
+                                   <div class="radio_wrap">
+                                        <h3>Payment Method</h3>
+                                        <ul>
+                                             <li>
+                                                  <input type="radio" name="payment-mode" id="paypal-232-1"
+                                                       value="paypal">
+
+                                                  <label for="paypal-232-1" id="option-paypal">Online Transfer</label>
+                                             </li>
+                                             <li>
+                                                  <input type="radio" name="payment-mode" id="cash-232-1" value="cash">
+
+                                                  <label for="cash-232-1" id="option-cash"> Cash on Delivery</label>
+                                             </li>
+                                        </ul>
+                                   </div>
+                                   <div class="row">
+                                        <div class="col-xl-9 col-lg-12">
+                                             <form class="form_wrap" action="#">
+                                                  <div class="row">
+                                                       <div class="col-xl-6 col-lg-6">
+                                                            <label for="fname">First Name<span>*</span></label>
+                                                            <input type="text" id="fname" name="fname"
+                                                                 placeholder="First Name">
                                                        </div>
-                                                       <div class="ri_cart">
-                                                            <h5 class="price">$25.00 <span class="old">$48</span></h5>
-                                                            <a class="icon" href="#"><i class="fal fa-heart"></i></a>
-                                                            <a class="icon" href="#"><i
-                                                                      class="fal fa-shopping-basket"></i></a>
+                                                       <div class="col-xl-6 col-lg-6">
+                                                            <label for="lname">Last Name<span>*</span></label>
+                                                            <input type="text" id="lname" name="lname"
+                                                                 placeholder="Last Name">
+                                                       </div>
+                                                       <div class="col-xl-6 col-lg-6">
+                                                            <label for="phone">Phone<span>*</span></label>
+                                                            <input type="text" id="phone" name="postcode"
+                                                                 placeholder="Enter your number...">
+                                                       </div>
+                                                       <div class="col-xl-6 col-lg-6">
+                                                            <label for="gmail">Gmail<span>*</span></label>
+                                                            <input type="text" id="gmail" name="postcode"
+                                                                 placeholder="Enter your mail...">
+                                                       </div>
+                                                       <div class="col-xl-12 col-lg-12">
+                                                            <label for="address">Street address<span>*</span></label>
+                                                            <input type="text" id="address" name="address"
+                                                                 placeholder="House number & State">
+                                                       </div>
+                                                       <div class="col-xl-12 col-lg-12">
+                                                            <label for="ct">Town / City<span>*</span></label>
+                                                            <input type="text" id="ct" name="ct"
+                                                                 placeholder="Town / City">
+                                                       </div>
+                                                       <div class="col-xl-12 col-lg-12">
+                                                            <label for="dselect">District<span>*</span></label>
+                                                            <div class="filter">
+                                                                 <select name="select" id="dselect">
+                                                                      <option value="1">Dhaka</option>
+                                                                      <option value="2">Faridpur</option>
+                                                                      <option value="3">Cumilla</option>
+                                                                      <option value="4">Noakhali</option>
+                                                                      <option value="5">Rangamati</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-xl-12 col-lg-12">
+                                                            <label for="postcode">Postcode /
+                                                                 ZIP<span>(optional)</span></label>
+                                                            <input type="text" id="postcode" name="postcode"
+                                                                 placeholder="Postcode/ZIP">
+                                                       </div>
+
+                                                       <div class="col-xl-12 col-lg-12">
+                                                            <label for="textarea">Additional
+                                                                 Information<span>*</span></label>
+                                                            <textarea name="textarea" id="textarea" cols="30" rows="10"
+                                                                 placeholder="Note about your order, Special note for delevery !"></textarea>
                                                        </div>
                                                   </div>
-                                             </div>
-                                             <div class="recipe_item">
-                                                  <div class="ri_img">
-                                                       <img src="theme/assets/img/shop/recipe-menu/rm_02.png" alt="">
-                                                  </div>
-                                                  <div class="ri_content">
-                                                       <div class="ri_text">
-                                                            <h3>Frances Chicken Burger</h3>
-                                                            <span>Rorem ipsum dolor sit amet, consect adipisicing elit,
-                                                                 sed do eiusmod tempor incididunt ut laborey.</span>
-                                                       </div>
-                                                       <div class="ri_cart">
-                                                            <h5 class="price">$39.00 <span class="old">$49</span></h5>
-                                                            <a class="icon" href="#"><i class="fal fa-heart"></i></a>
-                                                            <a class="icon" href="#"><i
-                                                                      class="fal fa-shopping-basket"></i></a>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                             <div class="recipe_item">
-                                                  <div class="ri_img">
-                                                       <img src="theme/assets/img/shop/recipe-menu/rm_03.png" alt="">
-                                                  </div>
-                                                  <div class="ri_content">
-                                                       <div class="ri_text">
-                                                            <h3>Full Stack Burger</h3>
-                                                            <span>Rorem ipsum dolor sit amet, consect adipisicing elit,
-                                                                 sed do eiusmod tempor incididunt ut laborey.</span>
-                                                       </div>
-                                                       <div class="ri_cart">
-                                                            <h5 class="price">$77.00 <span class="old">$83</span></h5>
-                                                            <a class="icon" href="#"><i class="fal fa-heart"></i></a>
-                                                            <a class="icon" href="#"><i
-                                                                      class="fal fa-shopping-basket"></i></a>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                             <div class="recipe_item">
-                                                  <div class="ri_img">
-                                                       <img src="theme/assets/img/shop/recipe-menu/rm_04.png" alt="">
-                                                  </div>
-                                                  <div class="ri_content">
-                                                       <div class="ri_text">
-                                                            <h3>Trendy Combo Pack</h3>
-                                                            <span>Rorem ipsum dolor sit amet, consect adipisicing elit,
-                                                                 sed do eiusmod tempor incididunt ut laborey.</span>
-                                                       </div>
-                                                       <div class="ri_cart">
-                                                            <h5 class="price">$15.00 <span class="old">$21</span></h5>
-                                                            <a class="icon" href="#"><i class="fal fa-heart"></i></a>
-                                                            <a class="icon" href="#"><i
-                                                                      class="fal fa-shopping-basket"></i></a>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                             <div class="recipe_item">
-                                                  <div class="ri_img">
-                                                       <img src="theme/assets/img/shop/recipe-menu/rm_05.png" alt="">
-                                                  </div>
-                                                  <div class="ri_content">
-                                                       <div class="ri_text">
-                                                            <h3>Japanis Nudul 2xu New</h3>
-                                                            <span>Rorem ipsum dolor sit amet, consect adipisicing elit,
-                                                                 sed do eiusmod tempor incididunt ut laborey.</span>
-                                                       </div>
-                                                       <div class="ri_cart">
-                                                            <h5 class="price">$64.00 <span class="old">$69</span></h5>
-                                                            <a class="icon" href="#"><i class="fal fa-heart"></i></a>
-                                                            <a class="icon" href="#"><i
-                                                                      class="fal fa-shopping-basket"></i></a>
+                                             </form>
+                                        </div>
+                                        <div class="row">
+                                             <div class="col-xl-6 col-lg-6 col-12">
+                                                  <div class="cart_tutal_wrap">
+                                                       <h3 class="title">Cart Totals</h3>
+                                                       <ul>
+                                                            <li>Subtotal <span>$70</span></li>
+                                                            <li>total <span>$70</span></li>
+                                                       </ul>
+                                                       <div class="text-right">
+                                                            <a class="thm_btn thm_btn-black"
+                                                                 href="checkout.html">Procced To Checkout</a>
                                                        </div>
                                                   </div>
                                              </div>
@@ -236,7 +229,7 @@
                     </div>
                </div>
           </section>
-          <!-- recipe menu end -->
+          <!-- checkout end -->
 
           <!-- footer start -->
           <footer class="footer-area footer_bg ">
