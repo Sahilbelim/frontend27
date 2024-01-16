@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+          // Write a programe to findout largest number outof given 3 numbers 
+          var number1 = prompt("Enter value of number 1 ");
+          var number2 = prompt("Enter value of number 2 ");
+          var number3 = prompt("Enter value of number 3 ");
+
+          //string concatination 
+          console.log("the value of number 1 " + number1);
+          console.log("the value of number 2 " + number2);
+          //string interpolation
+          console.log(`the value of number 3 ${number3} `);
+
+          if (number1 == number2 && number2 == number3) {
+               console.log("All are same ");
+          }
+          else {
+
+               if (number1 >= number2 && number1 >= number3) {
+                    console.log("number 1 is greater ");
+               }
+               else if (number2 >= number1 && number2 >= number3) {
+                    console.log(`number 2 is greater `);
+               }
+               else if (number3 >= number1 && number3 >= number2) {
+                    console.log("number 3 is greater ");
+               }
+          }
+     </script>
+</body>
+
+</html>
