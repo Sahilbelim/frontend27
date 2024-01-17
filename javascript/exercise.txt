@@ -12,3 +12,10 @@ yearly income     tax rate
 >=8,00,000        30%  
 
 Write a programe to findout wether the given year is millineum year or not 
+
+
+Write a programe to findout largest rectangle out of given 2 rectangles 
+
+Write a programe to findout wether the given number is odd or even 
+
+Write a programe to findout wehter the given letter is vowel or not 
