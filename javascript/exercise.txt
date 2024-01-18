@@ -19,3 +19,9 @@ Write a programe to findout largest rectangle out of given 2 rectangles
 Write a programe to findout wether the given number is odd or even 
 
 Write a programe to findout wehter the given letter is vowel or not 
+
+
+Write a programe to findout distance of planets from sun 
+
+Write a programe to findout how many days a month has without using and or and else if 
+&& || 
