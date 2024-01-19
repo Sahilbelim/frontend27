@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .p {
+               height: 150px;
+               padding: 20px;
+               border: 2px solid black;
+               border-radius: 20px;
+               background-color: rgb(222, 222, 255);
+               font-size: 2rem;
+          }
+
+          .btn {
+               height: 50px;
+               background-color: rgb(255, 213, 213);
+               padding: 10px;
+          }
+     </style>
+</head>
+
+<body>
+     <h1 align="center">
+          Example of document methods
+     </h1>
+     <hr>
+     <p class="p" id="demo_p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus non dolorem vitae commodi enim fuga,
+          incidunt a et ab vel nihil officia? Nihil cumque consequuntur assumenda delectus, ullam suscipit vero!
+     </p>
+     <div align="center">
+          <button class="btn " onclick="getIntro()">Introduction </button>
+          <button class="btn" onclick="getIntro2()"> Add more </button>
+     </div>
+
+     <script>
+          // console.log(document);
+          var my_text = 'Hello world , I am param patel ';
+          var my_text2 = '<p> Welcome , Today is Friday </p>';
+          var text = document.getElementById('demo_p').innerHTML;
+          console.log(text);
+
+          function getIntro2() {
+               document.getElementById('demo_p').innerHTML +=  my_text2;
+          }
+
+          function getIntro() {
+               document.getElementById('demo_p').innerHTML = my_text;
+          }
+
+     </script>
+</body>
+
+</html>
