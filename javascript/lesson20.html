@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <script>
+          // Example of default argument function 
+          function areaOfCylinder(height, radius, pi = 3.141592) {
+               console.log(`height is ${height} radius is ${radius} pi is ${pi}`);
+               let answer = (2 * pi * radius * height) + (2 * pi * (radius * radius));
+               console.log("the value of area of cylinder is " + answer);
+          }
+          areaOfCylinder(10, 20, 3.14);
+          areaOfCylinder(10, 20);
+     </script>
+</body>
+
+</html>

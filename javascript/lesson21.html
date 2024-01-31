@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <button id="btn_submit" value="Button1" onclick="ButtonClicked(this.id,event,this.value)">Button1</button>
+
+     <script>
+          function ButtonClicked(id, event, value) {
+               console.log("Button clicked  ");
+               console.log(`${id}`);
+               console.log(`${event}`);
+               console.log(`${value}`);
+          }
+     </script>
+</body>
+
+</html>
