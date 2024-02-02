@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          div {
+               height: 250px;
+               border: 2px solid black;
+               border-radius: 10px;
+               margin: 70px auto;
+               width: 250px;
+          }
+
+          .grandparent {
+               background-color: rgb(255, 192, 192);
+          }
+
+          .parent {
+               background-color: rgb(195, 195, 255);
+               height: 150px;
+               width: 150px;
+          }
+
+          .child {
+               background-color: rgb(179, 255, 179);
+               height: 75px;
+               width: 75px;
+          }
+     </style>
+</head>
+
+<body>
+     <h1 align="center">
+          Example of Event Listner
+     </h1>
+     <hr>
+     <div class="grandparent" id="grandparent">
+          <div class="parent" id="parent" >
+               <div class="child" id="child">
+
+               </div>
+          </div>
+     </div>
+     <script>
+          let grandparent = document.getElementById('grandparent');
+          let parent = document.getElementById('parent');
+          let child = document.getElementById('child');
+
+          grandparent.addEventListener('click',function(){
+               console.log("Grandparent Clicked ");
+          },true);
+
+          parent.addEventListener('click',function)
+
+     </script>
+</body>
+
+</html>

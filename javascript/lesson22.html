@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap demo</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <style>
+          .error {
+               border: 2px solid red;
+          }
+     </style>
+</head>
+
+<body>
+
+     <div class="container">
+          <div class="row">
+               <div class="col-8 offset-2">
+                    <div class="card mt-5 shadow">
+                         <div class="card-header h2 text-bg-success">
+                              Example of Form Events
+                         </div>
+                         <form action="lesson14.html" method="post" onsubmit="return validateForm()">
+                              <div class="card-body">
+                                   <div class="form-group">
+                                        <label for="email" class="form-label">
+                                             Enter your email
+                                        </label>
+                                        <input type="text" name="email" id="email" class="form-control" required
+                                             placeholder="Enter your email ">
+                                        <span id="email_error" class="text-danger ms-2"></span>
+                                   </div>
+                                   <div class="form-group mt-3">
+                                        <label for="password" class="form-label">Enter your password </label>
+                                        <input type="password" name="password" id="password" class="form-control"
+                                             required placeholder="Enter your password ">
+                                        <span id="password_error" class="text-danger ms-2"></span>
+                                   </div>
+                                   <div class="text-end mt-3">
+                                        <input type="submit" value="Submit" class="btn btn-success">
+                                        <input type="button" id="clear_all" value="Clear All" class="btn btn-danger">
+                                   </div>
+                              </div>
+                         </form>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+     <script>
+
+          let clear_all_btn = document.querySelector("#clear_all");
+          clear_all_btn.onclick = function () {
+               document.getElementById('email').value = '';
+               document.getElementById('password').value = '';
+          }
+
+          function validateEmail(email) {
+               console.log("Email ");
+               console.log(email);
+               var result = email.indexOf('@') < 0 ? false : true;
+               var result2 = email.indexOf('.com') < 0 ? false : true;
+               console.log(result);
+               if (result === false || result2 === false) {
+                    document.getElementById('email').classList.add('error');
+                    document.getElementById('email_error').innerHTML = 'Invalid Email Address';
+                    return false;
+               }
+               else {
+                    document.getElementById('email').classList.remove('error');
+                    document.getElementById('email_error').innerHTML = '';
+                    return true;
+               }
+          }
+
+          let validatePassword = function (password) {
+
+               if (password.length < 8) {
+                    document.getElementById('password').classList.add('error');
+                    document.getElementById('password_error').innerHTML = 'Invalid Password ';
+                    return false;
+               }
+               else {
+                    document.getElementById('password').classList.remove('error');
+                    document.getElementById('password_error').innerHTML = '';
+                    return true;
+               }
+          }
+
+          let validateForm = function () {
+               var email_value = document.getElementById('email').value;
+               var password_value = document.getElementById('password').value;
+               let email = validateEmail(email_value);
+               let password = validatePassword(password_value);
+               if (email == false || password == false) {
+                    return false;
+               }
+               else {
+                    return true;
+               }
+          }
+     </script>
+</body>
+
+</html>
