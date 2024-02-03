@@ -49,9 +49,15 @@
           let parent = document.getElementById('parent');
           let child = document.getElementById('child');
 
-          grandparent.addEventListener('click', function () {
+          grandparent.addEventListener('click', grandParentClick, true);
+
+          function grandParentClick() {
                console.log("Grandparent Clicked ");
-          }, true);
+               setTimeout(function () {
+                    grandparent.removeEventListener('click', grandParentClick, true);
+               }, 0);
+          }
+
 
           parent.addEventListener('click', function () {
                console.warn("Parent Clicked");

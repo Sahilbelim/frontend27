@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+
+     <script>
+
+          async function Abc() {
+               console.log("this is abc ");
+               await setTimeout(function () {
+                    console.log("middle of abc");
+                    console.log("abc completed ");
+               }, 3000)
+          }
+
+          async function Xyz() {
+               console.log("this is xyz ");
+               await setTimeout(function () {
+                    console.log('middle of xyz ');
+                    console.log("xyz completed ");
+               }, 1000)
+          }
+
+          async function callAll() {
+               await Abc();
+               console.log("call all");
+          }
+
+          callAll();
+
+     </script>
+</body>
+
+</html>
