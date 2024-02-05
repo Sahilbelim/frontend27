@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+          let walk = function () {
+               console.log("I can walk ");
+          }
+          // example of object 
+          let person = {
+               'name': 'Param Patel',
+               'age': 20,
+               'gender': true,
+               'weight': 40.40,
+               'marks': [30, 30, 30, 30],
+               'talk': function talk() {
+                    console.log("I can Talk ");
+               },
+               'walk': walk
+          }
+
+          console.log(person);
+          console.log(console);
+          console.log(person['name']);
+          console.log(person.age);
+          person.talk();
+          person.walk();
+     </script>
+</body>
+
+</html>
