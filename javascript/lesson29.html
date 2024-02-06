@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+
+          class Car {
+               constructor(name, doors, color) {
+                    this.name = prompt("Enter name");
+                    this.doors = prompt("Enter doors");
+                    this.color = prompt("Enter color");
+               }
+               display() {
+
+                    console.log(`${this.name} has ${this.doors} doors and color ${this.color}`)
+               }
+          }
+
+          let c1 = new Car("Ford", 4, 'black');
+          c1.display();
+          let c2 = new Car("Mahindra", 4, 'black');
+          c2.display();
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+
+          function person(myname,myage,mygender) {
+               this.name = myname ;
+               this.age = myage;
+               this.gender = mygender;
+               this.code = function () {
+                    console.log("i can code ");
+               };
+               this.display = function () {
+                    console.log(` ${this.name}  ${this.age}  ${this.gender} `);
+               }
+          }
+
+          let p1 = new person("Param", 20 , true);
+          p1.display();
+          let p2 = new person("Jhon doe",56,true);
+          p2.display();
+
+     </script>
+</body>
+
+</html>

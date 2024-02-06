@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+          //object 
+          let person = new Object({
+               "name" : "Param Patel ",
+               "age": 20,
+               "gender": true,
+               "sleep": function () {
+                    console.log(`${this.name} is sleeping `);
+               }
+          });
+
+          //object variable 
+          let p1 = person;
+          console.log(p1.name);
+          console.log(p1.age);
+          console.log(p1.gender);
+          p1.sleep()
+     </script>
+</body>
+
+</html>
