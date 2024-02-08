@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap demo</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+     <div class="container">
+          <div class="row">
+               <div class="col-8 offset-2">
+                    <div class="card mt-5 shadow">
+                         <div class="card-header h2 text-bg-success">
+                              Example of Object
+                         </div>
+                         <div class="card-body">
+                              <form action="" method="post" onsubmit="return addStudent()">
+                                   <div class="form-group">
+                                        <label for="" class="form-label">Enter your name </label>
+                                        <input type="text" name="name" id="name" placeholder="Enter your name "
+                                             class="form-control">
+                                   </div>
+                                   <div class="form-group mt-3">
+                                        <label for="" class="form-label">Enter your Phone number </label>
+                                        <input type="number" name="number" id="number"
+                                             placeholder="Enter your phone number " class="form-control">
+                                   </div>
+                                   <div class="form-group mt-3">
+                                        <label for="" class="form-label">Enter your Email Address</label>
+                                        <input type="email" name="email" id="email"
+                                             placeholder="Enter your email Address" class="form-control">
+                                   </div>
+                                   <div class="text-end mt-3">
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <button type="reset" class="btn btn-danger">Clear All</button>
+                                   </div>
+                              </form>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-8 offset-2">
+                    <div class="card">
+                         <div class="card-header h2 text-bg-success">
+                              Student List
+                         </div>
+                         <div class="card-body">
+                              <table class="table table-striped table-bordered table-hover">
+                                   <thead>
+                                        <th>Name</th>
+                                        <th>Phone number</th>
+                                        <th>Email</th>
+                                        <th>Operations</th>
+                                   </thead>
+                                   <tbody id="table">
+
+                                   </tbody>
+                              </table>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+     <script src="cokkies.js"></script>
+     <script>
+
+          let temp = getCookie("data");
+          temp = JSON.parse(JSON.stringify(temp));
+          console.log(temp);
+          for (let i = 0; i < temp.length; i++) {
+               console.log(temp[i].tr);
+               document.getElementById('table').innerHTML += temp[i].tr;
+          }
+          // setCookie("color", "Red");
+          // let demo = getCookie("color");
+          // console.log("This is cookie " + demo);
+          class Student {
+               constructor(name, phone_number, email, id) {
+                    this.id = id
+                    this.name = name;
+                    this.phone_number = phone_number;
+                    this.email = email;
+                    // this.table = document.getElementById('table').innerHTML;
+                    this.tr = `<tr>
+                                   <td>${this.name}</td>
+                                   <td>${this.phone_number}</td>
+                                   <td>${this.email}</td>
+                                   <td>
+                                        <i class="fa-solid fa-pen-to-square me-4"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                   </td>
+                              </tr>`;
+                    document.getElementById('table').innerHTML += this.tr;
+               }
+               display() {
+                    console.log(`${this.name} ${this.phone_number} ${this.email}`);
+               }
+          }
+
+          var id = 1;
+          function addStudent() {
+               var data = JSON.parse(JSON.stringify(getCookie("data")));
+               let name = document.getElementById("name").value;
+               let phone_number = document.getElementById("number").value;
+               let email = document.getElementById("email").value;
+               let s1 = new Student(name, phone_number, email, id);
+               id = id + 1;
+               data.push(s1);
+               setCookie("data", data);
+               let temp = getCookie("data");
+               temp = JSON.parse(temp);
+               console.log(temp);
+               s1.display();
+               console.log(data);
+               return false;
+          }
+
+     </script>
+</body>
+
+</html>
