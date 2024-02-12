@@ -76,13 +76,21 @@
      <script>
 
           let cookies = Object.fromEntries(document.cookie.split('; ').map(c => c.split('=')))
+          if (Object.length == 0) {
+               console.log("check");
+               setCookie('id', 1);
+               cookies = Object.fromEntries(document.cookie.split('; ').map(c => c.split('=')))
+          }
+          // else {
+          //      delete cookies['id'];
+          // }
           console.log(cookies);
-          delete cookies['id'];
           let cookies_name = Object.keys(cookies);
           let data = []
           let temp = ' ';
-          if (cookies_name.length > 1) {
-               console.log(JSON.parse(getCookie(cookies_name[0])));
+          if (cookies_name.length >= 1) {
+               delete cookies['id'];
+               console.log(JSON.parse(JSON.stringify(getCookie(cookies_name[1]))));
                for (let count = 0; count < cookies_name.length; count++) {
                     temp = JSON.parse(getCookie(cookies_name[count]))
                     data.push(temp);
@@ -97,13 +105,13 @@
                     this.phone_number = phone_number;
                     this.email = email;
                     // this.table = document.getElementById('table').innerHTML;
-                    this.tr = `<tr>
+                    this.tr = `<tr id='tr${this.id}'>
                                    <td>${this.name}</td>
                                    <td>${this.phone_number}</td>
                                    <td>${this.email}</td>
                                    <td>
-                                        <i class="fa-solid fa-pen-to-square me-4" id='${this.id}'></i>
-                                        <i class="fa-solid fa-trash"></i>
+                                        <button class='btn btn-primary me-4' id='${this.id}'><i class="fa-solid fa-pen-to-square" id='${this.id}' onclick="deleteRow(${this.id})"></i></button>
+                                        <button class='btn btn-danger' id='${this.id}'> <i class="fa-solid fa-trash" onclick="deleteRow(${this.id})"></i> </button>
                                    </td>
                               </tr>`;
                     document.getElementById('table').innerHTML += this.tr;
@@ -113,14 +121,14 @@
                }
           }
           if (getCookie('id')) {
-               var id = parseInt(getCookie('id'));
+               var id = parseInt(getCookie('id')) + 1;
           }
           else {
                setCookie('id', 0);
-               var id = parseInt(getCookie('id'));
+               var id = parseInt(getCookie('id')) + 1;
           }
           function addStudent() {
-               id = parseInt(id) + 1;
+               // id = parseInt(id) + 1;
                let name = document.getElementById("name").value;
                let phone_number = document.getElementById("number").value;
                let email = document.getElementById("email").value;
@@ -128,7 +136,24 @@
                setCookie('student' + id, s1);
                setCookie('id', id);
                s1.display();
+               document.getElementById("name").value = '';
+               document.getElementById("number").value = '';
+               document.getElementById("email").value = '';
                return false;
+          }
+
+          function deleteRow(id) {
+               answer = confirm("Are you sure , Do you really want to delete ");
+               if (answer == true) {
+                    //delete
+                    console.log(answer);
+                    console.log(id);
+                    let tr_name = 'tr' + id;
+                    console.log(tr_name);
+                    let cookie_name = 'student' + id;
+                    deleteCookie(cookie_name);
+                    document.getElementById(tr_name).remove();
+               }
           }
 
      </script>

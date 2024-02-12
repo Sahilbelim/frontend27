@@ -9,6 +9,11 @@ function setCookie(name, value, days = 365) {
 
      document.cookie = name + "=" + encodeURIComponent(value) + ";" + expires + ";path=/;SameSite=None;Secure";
 }
+
+function deleteCookie(name) {
+     document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
 //to get cookies value, if cookies does not exists it returns nothing means blank ''
 function getCookie(name) {
      var name = name + "=";
