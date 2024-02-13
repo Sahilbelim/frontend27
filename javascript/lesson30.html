@@ -39,7 +39,10 @@
                                              placeholder="Enter your email Address" class="form-control">
                                    </div>
                                    <div class="text-end mt-3">
-                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <span id="button">
+                                             <button type="submit" class="btn btn-success"
+                                                  id="my_button">Submit</button>
+                                        </span>
                                         <button type="reset" class="btn btn-danger">Clear All</button>
                                    </div>
                               </form>
@@ -78,7 +81,7 @@
           let cookies = Object.fromEntries(document.cookie.split('; ').map(c => c.split('=')))
           if (Object.length == 0) {
                console.log("check");
-               setCookie('id', 1);
+               // setCookie('id', 1);
                cookies = Object.fromEntries(document.cookie.split('; ').map(c => c.split('=')))
           }
           // else {
@@ -88,7 +91,7 @@
           let cookies_name = Object.keys(cookies);
           let data = []
           let temp = ' ';
-          if (cookies_name.length >= 1) {
+          if (cookies_name.length > 1) {
                delete cookies['id'];
                console.log(JSON.parse(JSON.stringify(getCookie(cookies_name[1]))));
                for (let count = 0; count < cookies_name.length; count++) {
@@ -110,7 +113,7 @@
                                    <td>${this.phone_number}</td>
                                    <td>${this.email}</td>
                                    <td>
-                                        <button class='btn btn-primary me-4' id='${this.id}'><i class="fa-solid fa-pen-to-square" id='${this.id}' onclick="deleteRow(${this.id})"></i></button>
+                                        <button class='btn btn-primary me-4' id='${this.id}'><i class="fa-solid fa-pen-to-square" id='${this.id}' data-name=${this.data} onclick="editRow(${this.id})"></i></button>
                                         <button class='btn btn-danger' id='${this.id}'> <i class="fa-solid fa-trash" onclick="deleteRow(${this.id})"></i> </button>
                                    </td>
                               </tr>`;
@@ -121,14 +124,14 @@
                }
           }
           if (getCookie('id')) {
-               var id = parseInt(getCookie('id')) + 1;
+               var id = parseInt(getCookie('id'));
           }
           else {
                setCookie('id', 0);
-               var id = parseInt(getCookie('id')) + 1;
+               var id = parseInt(getCookie('id'));
           }
           function addStudent() {
-               // id = parseInt(id) + 1;
+               id = parseInt(id) + 1;
                let name = document.getElementById("name").value;
                let phone_number = document.getElementById("number").value;
                let email = document.getElementById("email").value;
@@ -154,6 +157,29 @@
                     deleteCookie(cookie_name);
                     document.getElementById(tr_name).remove();
                }
+          }
+
+          function editRow(id) {
+
+               answer = confirm("Are you sure , Do you really want to edit ");
+               if (answer == true) {
+                    console.log(id);
+                    let tr = document.getElementById('tr' + id).children;
+                    console.log(tr);
+                    let name = tr[0].innerHTML;
+                    let number = tr[1].innerHTML;
+                    let email = tr[2].innerHTML;
+                    console.log(`the value of name is ${name} , number is ${number} , email is ${email}`);
+                    document.getElementById("name").value = name;
+                    document.getElementById("number").value = number;
+                    document.getElementById("email").value = email;
+                    document.getElementById('button').innerHTML = `<button type="button" class="btn btn-primary" id='my_button' onclick='updateStudent(${id})'>Update</button>`;
+               }
+          }
+
+          function updateStudent(id) {
+               console.log(id);
+               console.log("this is update student ");
           }
 
      </script>
