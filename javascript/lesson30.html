@@ -88,13 +88,14 @@
           //      delete cookies['id'];
           // }
           console.log(cookies);
+          // delete cookies['id'];
           let cookies_name = Object.keys(cookies);
           let data = []
           let temp = ' ';
           if (cookies_name.length > 1) {
-               delete cookies['id'];
+
                console.log(JSON.parse(JSON.stringify(getCookie(cookies_name[1]))));
-               for (let count = 0; count < cookies_name.length; count++) {
+               for (let count = 0; count < cookies_name.length - 1; count++) {
                     temp = JSON.parse(getCookie(cookies_name[count]))
                     data.push(temp);
                     document.getElementById('table').innerHTML += temp['tr']
@@ -117,7 +118,6 @@
                                         <button class='btn btn-danger' id='${this.id}'> <i class="fa-solid fa-trash" onclick="deleteRow(${this.id})"></i> </button>
                                    </td>
                               </tr>`;
-                    document.getElementById('table').innerHTML += this.tr;
                }
                display() {
                     console.log(`${this.name} ${this.phone_number} ${this.email}`);
@@ -139,6 +139,7 @@
                setCookie('student' + id, s1);
                setCookie('id', id);
                s1.display();
+               document.getElementById('table').innerHTML += s1.tr;
                document.getElementById("name").value = '';
                document.getElementById("number").value = '';
                document.getElementById("email").value = '';
@@ -160,7 +161,6 @@
           }
 
           function editRow(id) {
-
                answer = confirm("Are you sure , Do you really want to edit ");
                if (answer == true) {
                     console.log(id);
@@ -180,6 +180,32 @@
           function updateStudent(id) {
                console.log(id);
                console.log("this is update student ");
+               let tr = document.getElementById('tr' + id).children;
+               console.log(tr);
+               let tr_name = tr[0].innerHTML;
+               let tr_number = tr[1].innerHTML;
+               let tr_email = tr[2].innerHTML;
+               console.log(`the value of name is ${tr_name} , number is ${tr_number} , email is ${tr_email}`);
+
+               let input_name = document.getElementById('name').value;
+               let input_number = document.getElementById('number').value;
+               let input_email = document.getElementById('email').value;
+               let s2 = new Student(input_name, input_number, input_email, id);
+               setCookie('student' + id, s2);
+               console.log(`the value of name is ${input_name} , number is ${input_number} , email is ${input_email}`);
+               document.getElementById('tr' + id).innerHTML = ` <td>${input_name}</td>
+                                   <td>${input_number}</td>
+                                   <td>${input_email}</td>
+                                   <td>
+                                        <button class='btn btn-primary me-4' id='${id}'><i class="fa-solid fa-pen-to-square" id='${id}'  onclick="editRow(${id})"></i></button>
+                                        <button class='btn btn-danger' id='${id}'> <i class="fa-solid fa-trash" onclick="deleteRow(${id})"></i> </button>
+                                   </td>`
+               document.getElementById('button').innerHTML = ` <button type="submit" class="btn btn-success"
+                                                  id="my_button">Submit</button>`;
+
+               document.getElementById('name').value = '';
+               document.getElementById('number').value = '';
+               document.getElementById('email').value = '';
           }
 
      </script>
