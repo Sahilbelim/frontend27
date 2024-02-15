@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+
+          class Person {
+               constructor(name) {
+                    console.log("Parent constructor called...");
+                    this.name = name;
+               }
+               walk() {
+                    console.log(`${this.name} can walk `);
+               }
+               talk() {
+                    console.log(`${this.name} can talk `);
+               }
+          }
+
+          class Teacher extends Person {
+               constructor(name, subject) {
+                    super(name);
+                    this.subject = subject;
+                    console.log("Child constructor called...");
+               }
+               teach() {
+                    console.log(`${this.name} teaches ${this.subject}`);
+               }
+          }
+
+          let p1 = new Person("Param patel");
+          p1.walk();
+          p1.talk();
+
+          console.log("========================================");
+
+          let t1 = new Teacher("Param ", "React");
+          t1.teach();
+          t1.walk();
+          t1.talk();
+     </script>
+</body>
+
+</html>
