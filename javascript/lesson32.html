@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+
+     <script>
+
+          class Person {
+
+               walk() {
+                    console.log("I can walk ");
+               }
+
+               talk() {
+                    console.log("I can talk ");
+               }
+          }
+
+          class Student extends Person {
+               read() {
+                    console.log("I can read ");
+               }
+               write() {
+                    console.log("I can write ");
+               }
+          }
+
+          class Teacher extends Student {
+               test() {
+                    console.log("I will take test ");
+               }
+               teach() {
+                    console.log("I will teach ");
+               }
+          }
+
+          console.log("=========================Person====================");
+          let p1 = new Person();
+          p1.talk();
+          p1.walk();
+          console.log("==========================Student===================");
+          let s1 = new Student();
+          s1.read();
+          s1.write();
+          s1.talk();
+          s1.walk();
+          console.log("==========================Teacher=====================");
+          let t1 = new Teacher();
+          t1.test();
+          t1.teach();
+          t1.read();
+          t1.write();
+          t1.walk();
+          t1.talk();
+     </script>
+</body>
+
+</html>

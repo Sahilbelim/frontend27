@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+
+     <script>
+          class Person {
+               talk() {
+                    console.log("i can talk ");
+               }
+               walk() {
+                    console.log("i can walk ");
+               }
+          }
+
+          class Student extends Person {
+
+               read() {
+                    console.log("I can read ");
+               }
+
+               write() {
+                    console.log("I can write ");
+               }
+          }
+
+          class Teacher extends Student {
+               teach() {
+                    console.log("I can teach ");
+               }
+
+               test() {
+                    console.log("I will take test ");
+               }
+          }
+
+          class Coder extends Person {
+               code() {
+                    console.log("I can code");
+               }
+               debug() {
+                    console.log("I will debug ");
+               }
+          }
+
+          console.log("========================Person=====================")
+          let p1 = new Person();
+          p1.talk();
+          p1.walk();
+          console.log("========================Student====================")
+          let s1 = new Student();
+          s1.talk();
+          s1.walk();
+          s1.read();
+          s1.write();
+          console.log("========================Teacher=====================")
+          let t1 = new Teacher();
+          t1.walk();
+          t1.talk();
+          t1.teach();
+          t1.test();
+          t1.read();
+          t1.write();
+          console.log("========================Coder=======================")
+          let c1 = new Coder();
+          c1.walk();
+          c1.talk();
+          c1.code();
+          c1.debug();
+     </script>
+</body>
+
+</html>

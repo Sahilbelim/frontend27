@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+
+          class Vehicle {
+               transport() {
+                    console.log("I will transport ");
+               }
+               fueling() {
+                    console.log("I need fule ");
+               }
+          }
+
+          class Cars extends Vehicle {
+               wheels() {
+                    console.log("I have 4 wheels ");
+               }
+               doors() {
+                    console.log("I have 4 doors ");
+               }
+          }
+
+          class Bike extends Vehicle {
+               wheels() {
+                    console.log("I have 2 wheels ");
+               }
+               doors() {
+                    console.log("I have no doors ");
+               }
+          }
+          console.log("=======================Vehicle===================");
+          let v1 = new Vehicle();
+          v1.fueling();
+          v1.transport();
+          console.log("=======================Cars=======================");
+          let c1 = new Cars();
+          c1.wheels();
+          c1.doors();
+          c1.fueling();
+          c1.transport();
+          console.log("=======================Bike========================");
+          let b1 = new Bike();
+          b1.wheels();
+          b1.doors();
+          b1.transport();
+          b1.fueling();
+     </script>
+</body>
+
+</html>
