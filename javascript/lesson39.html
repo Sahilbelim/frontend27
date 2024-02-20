@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap demo</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+     <div class="container">
+          <div class="row">
+               <div class="col-12">
+                    <div class="card mt-4 shadow">
+                         <div class="card-header h3 text-bg-success">
+                              Score card
+                         </div>
+                         <div class="card-body">
+                              <div class="row mt-5">
+                                   <!-- <div class="col-6" style="border-right: 3px solid black;"> -->
+                                   <div class="col-6">
+                                        <div class="row" id="india">
+                                             <div class="col-6">
+                                                  <div class="card shadow">
+                                                       <div class="card-header h3 text-bg-primary">
+                                                            Virat Kohli
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <img src="https://picsum.photos/250/250" class="img-fluid"
+                                                                 alt="">
+                                                       </div>
+                                                       <div class="card-footer">
+                                                            Runs : 10000
+                                                            Matches : 250
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-6">
+                                        <div class="row" id="austraila">
+                                             <div class="col-6">
+                                                  <div class="card shadow">
+                                                       <div class="card-header h3 text-bg-warning">
+                                                            Virat Kohli
+                                                       </div>
+                                                       <div class="card-body">
+                                                            <img src="https://picsum.photos/250/250" class="img-fluid"
+                                                                 alt="">
+                                                       </div>
+                                                       <div class="card-footer">
+                                                            Runs : 10000
+                                                            Matches : 250
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+     <script>
+
+          const indianPlayers = [
+               {
+                    name: "Virat Kohli",
+                    image: "https://picsum.photos/250/250?random=1",
+                    runs: 12000,
+                    matches: 250
+               },
+               {
+                    name: "Rohit Sharma",
+                    image: "https://picsum.photos/250/250?random=2",
+                    runs: 10000,
+                    matches: 220
+               },
+               {
+                    name: "Jasprit Bumrah",
+                    image: "https://picsum.photos/250/250?random=3",
+                    runs: 100,
+                    matches: 80
+               },
+               {
+                    name: "Hardik Pandya",
+                    image: "https://picsum.photos/250/250?random=4",
+                    runs: 3000,
+                    matches: 120
+               },
+               {
+                    name: "Ravindra Jadeja",
+                    image: "https://picsum.photos/250/250?random=5",
+                    runs: 4000,
+                    matches: 150
+               },
+               {
+                    name: "KL Rahul",
+                    image: "https://picsum.photos/250/250?random=6",
+                    runs: 5000,
+                    matches: 160
+               },
+               {
+                    name: "Shikhar Dhawan",
+                    image: "https://picsum.photos/250/250?random=11",
+                    runs: 8000,
+                    matches: 210
+               },
+               {
+                    name: "Rishabh Pant",
+                    image: "https://picsum.photos/250/250?random=7",
+                    runs: 2000,
+                    matches: 60
+               },
+               {
+                    name: "Ravichandran Ashwin",
+                    image: "https://picsum.photos/250/250?random=8",
+                    runs: 2500,
+                    matches: 90
+               },
+               {
+                    name: "Ajinkya Rahane",
+                    image: "https://picsum.photos/250/250?random=9",
+                    runs: 7000,
+                    matches: 180
+               },
+               {
+                    name: "Ishant Sharma",
+                    image: "https://picsum.photos/250/250?random=10",
+                    runs: 500,
+                    matches: 100
+               }
+          ];
+
+          const australianPlayers = [
+               {
+                    name: "Steve Smith",
+                    image: "https://picsum.photos/250/250?random=12",
+                    runs: 8500,
+                    matches: 150
+               },
+               {
+                    name: "David Warner",
+                    image: "https://picsum.photos/250/250?random=13",
+                    runs: 10000,
+                    matches: 200
+               },
+               {
+                    name: "Pat Cummins",
+                    image: "https://picsum.photos/250/250?random=14",
+                    runs: 500,
+                    matches: 60
+               },
+               {
+                    name: "Mitchell Starc",
+                    image: "https://picsum.photos/250/250?random=15",
+                    runs: 1000,
+                    matches: 80
+               },
+               {
+                    name: "Marnus Labuschagne",
+                    image: "https://picsum.photos/250/250?random=16",
+                    runs: 3000,
+                    matches: 50
+               },
+               {
+                    name: "Aaron Finch",
+                    image: "https://picsum.photos/250/250?random=17",
+                    runs: 6000,
+                    matches: 150
+               },
+               {
+                    name: "Glenn Maxwell",
+                    image: "https://picsum.photos/250/250?random=18",
+                    runs: 3500,
+                    matches: 100
+               },
+               {
+                    name: "Nathan Lyon",
+                    image: "https://picsum.photos/250/250?random=19",
+                    runs: 500,
+                    matches: 90
+               },
+               {
+                    name: "Travis Head",
+                    image: "https://picsum.photos/250/250?random=20",
+                    runs: 2000,
+                    matches: 40
+               },
+               {
+                    name: "Matthew Wade",
+                    image: "https://picsum.photos/250/250?random=21",
+                    runs: 2500,
+                    matches: 70
+               },
+               {
+                    name: "Josh Hazlewood",
+                    image: "https://picsum.photos/250/250?random=22",
+                    runs: 200,
+                    matches: 50
+               }
+          ];
+
+          let indianCard = ``;
+          let australianCard = ``;
+
+          console.log(indianPlayers);
+          console.log(australianPlayers);
+
+          indianPlayers.map((player) => {
+               indianCard += `<div class="col-6 mt-3">
+                              <div class="card shadow">
+                                   <div class="card-header h3 text-bg-primary">
+                                       ${player.name}
+                                   </div>
+                                   <div class="card-body">
+                                        <img src="${player.image}" class="img-fluid" alt="">
+                                   </div>
+                                   <div class="card-footer">
+                                        Runs : ${player.runs}
+                                        Matches : ${player.matches}
+                                   </div>
+                              </div>
+                         </div>`
+          });
+          document.getElementById("india").innerHTML = indianCard;
+
+          australianPlayers.map((player) => {
+               australianCard += `<div class="col-6 mt-3">
+                              <div class="card shadow">
+                                   <div class="card-header h3 text-bg-warning">
+                                        ${player.name}
+                                   </div>
+                                   <div class="card-body">
+                                        <img src="${player.image}" class="img-fluid" alt="">
+                                   </div>
+                                   <div class="card-footer">
+                                        Runs : ${player.runs}
+                                        Matches : ${player.matches}
+                                   </div>
+                              </div>
+                         </div>`;
+          });
+          document.getElementById("austraila").innerHTML = australianCard;
+     </script>
+</body>
+
+</html>

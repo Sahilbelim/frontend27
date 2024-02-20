@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+          let numbers = [10, 30, 40, 50, 88, 94, 35, 67, 21, 30];
+          let even_count = 0;
+          let odd_count = 0;
+          numbers.map((value) => {
+               document.write("value " + value + "<br>");
+               if (value % 2 == 0) {
+                    even_count++;
+               }
+               else {
+                    odd_count++;
+               }
+          });
+          document.write(`<br><br>Total even number are ${even_count}`);
+          document.write(`<br><br>Total odd number are ${odd_count}`);
+
+     </script>
+</body>
+
+</html>
