@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+          let number1 = [10, 20, 30, 40, 50];
+          let number2 = [90, 80, 70, 60, 50];
+          let number3 = [...number1, ...number2];
+          console.log(number1);
+          console.log(number2);
+          console.log(number3);
+
+          number2.map((item) => {
+               number1.push(item);
+          });
+
+          console.log(number1);
+
+          let book = {
+               'name': "atomic habit ",
+               'price': 500,
+               'pages': 250,
+          }
+
+          let book2 = {
+               "name": 'the secrete',
+               'price': 700,
+               'color': 'red',
+          }
+
+          let book3 = { ...book, ...book2 }
+          console.log(book3);
+
+          for (let key in book3) {
+               console.log(key);
+               console.log(book3[key]);
+          }
+     </script>
+</body>
+
+</html>

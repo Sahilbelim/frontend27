@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+          let person = {
+               'name': "Param patel",
+               'age': 20,
+               'gender': "Male",
+          };
+
+          console.log(person);
+
+          let person_name = person.name;
+          let person_age = person.age;
+          let person_gender = person.gender;
+
+          console.log(`The value of person_name is ${person_name} age is ${person_age} and gender is ${person_gender}`);
+
+          // let {name ,age , gender } = person
+
+          let {name : my_name , gender : mygender , age : myage } = person;
+          console.log(`Name is ${my_name} age is ${myage} gender is ${mygender}`);
+     </script>
+</body>
+
+</html>
