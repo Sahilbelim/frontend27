@@ -17,6 +17,7 @@ function deleteCookie(name) {
 //to get cookies value, if cookies does not exists it returns nothing means blank ''
 function getCookie(name) {
      var name = name + "=";
+     // param= 
      var decodedCookie = decodeURIComponent(document.cookie);
      var ca = decodedCookie.split(';');
      for (var i = 0; i < ca.length; i++) {
