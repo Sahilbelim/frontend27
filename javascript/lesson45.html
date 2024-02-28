@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <p>
+          Location :
+     </p>
+     <span id="mylocation">
+
+     </span>
+     <button type="button" onclick="getLocation()">Click me</button>
+     <br>
+     <div id="map">
+
+     </div>
+     <script>
+          let getLocation = function () {
+               console.log("location ");
+               navigator.geolocation.getCurrentPosition(displayPosition);
+          }
+          let displayPosition = function (location) {
+               document.getElementById("mylocation").innerHTML = `The value of latitude is ${location.coords.latitude} , The value of longitude is ${location.coords.longitude}`;
+               let map = ` <iframe width="425" height="350"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=${location.coords.longitude}%2C${location.coords.latitude}%2C${location.coords.longitude}%2C${location.coords.latitude}&amp;layer=mapnik"
+                    style="border: 1px solid black"></iframe><br /><small><a
+                         href="https://www.openstreetmap.org/#map=16/21.7517/72.1390">View Larger Map</a></small>`;
+               document.getElementById("map").innerHTML = map;
+          }
+     </script>
+</body>
+
+</html>
