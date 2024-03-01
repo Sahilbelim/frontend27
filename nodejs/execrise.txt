@@ -1,0 +1,9 @@
+Write a programe to print the given string in reverse only vowel 
+
+hello world
+
+hollo welrd
+
+programe
+
+pregramo
