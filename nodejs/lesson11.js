@@ -17,8 +17,6 @@ words.map((value) => {
 
 console.log(vowels_position);
 
-var duplicate_words = words;
-
 vowels_position = vowels_position.reverse()
 console.log(vowels_position)
 console.log(vowels);
