@@ -1,9 +1,11 @@
-Write a programe to print the given string in reverse only vowel 
+Write a programe in express js to create 5 pages 
+->login
+->register
+->change password
+->Forgot password 
+->Profile
 
-hello world
 
-hollo welrd
-
-programe
-
-pregramo
+-> https://www.npmjs.com/package/qrcode
+Write a nodejs programe to qr code which has data link
+->https://github.com/parampatel07/frontend27/
