@@ -1,11 +1,12 @@
 Write a programe in express js to create 5 pages 
-->login
-->register
-->change password
-->Forgot password 
-->Profile
+post->login  -> green , white 
+post->register -> red , white 
+get->change password -> blue , white 
+put->Forgot password  -> yellow , black 
+delete->Profile -> orange , black 
 
 
 -> https://www.npmjs.com/package/qrcode
 Write a nodejs programe to qr code which has data link
 ->https://github.com/parampatel07/frontend27/
+
