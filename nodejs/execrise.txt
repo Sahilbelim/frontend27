@@ -10,3 +10,6 @@ delete->Profile -> orange , black
 Write a nodejs programe to qr code which has data link
 ->https://github.com/parampatel07/frontend27/
 
+Write a programe to accpet input from user using get method and peform addition of 2 number 
+
+Write a programe to findout wether the given number is odd or even 
