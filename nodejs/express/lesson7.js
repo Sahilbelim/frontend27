@@ -1,14 +1,27 @@
 // Write a programe to findout wether login attempt is successfull or not 
-// correct date 
+// correct data
 // email = admin@gmail.com  
 // password = 987987 
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 
-app.post("/login",function(request,response){
+app.use(bodyParser.json());
 
-     let email = 'admin@gmail.com';
-     let password = 987987;
+app.post("/login", function (request, response) {
+
+     console.log(request.body);
+     let email = request.body.email;
+     let password = request.body.password;
+
+     if (email == "admin@gmail.com" && password == "987987") {
+          response.send("Login Successfully ");
+     }
+     else {
+          response.send("Login Invalid ");
+     }
 
 });
+
+app.listen(5000);
+console.log('Server ready... ');
