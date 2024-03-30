@@ -1,0 +1,11 @@
+Write a programe to create server 
+
+Explain request and response 
+
+Create a dyanmic url ( put ) with input name and age 
+
+Write a programe to findout wether the given year is millinuem year or not ( post )
+
+Name any 5 File related function and give example of any 3 
+
+Create a route using express with page name "/delete_profile" which when recived request delete's file named profile 
