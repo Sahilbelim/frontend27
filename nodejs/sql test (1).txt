@@ -1,0 +1,47 @@
+SQL test 
+
+1) write a query to insert a new record in to payment table
+-> Insert into payment ( customerNumber, checkNumber , paymentDate , amount  ) values 
+( 113 , 'AB123456' , '2024-04-09' , 10000 );
+
+2) write a query to delete record from customer table whose customerNumber is 120
+-> Delete from customer where customerNumber = 120 
+
+3) update customer table increase creditLimit by 10000 of all customers 
+-> Update customer set creditLimit = creditLimit  + 10000 
+
+4) display those customer detail whose country is USA and state is ca
+-> SELECT * from customer where country = 'Usa' and state = 'ca'
+
+5) display those customer detail whose companyName has co. at any place
+-> SELECT * from customer where companyName like "%co.%" 
+
+6) display total payment, average payment made in year 2004
+-> SELECT sum(amount) , avg(amount) from payment where paymentDate > '2003-12-31' and paymentDate < '2005-01-01'
+
+7) display those payment detail which has been made in may-2004
+-> SELECT * from payment where paymentDate where paymentDate > '2004-04-30' and paymentDate < '2004-06-01'
+
+8) display customerNo,Name, country and state and city in country wise ascending order. 
+-> Select customerNo , Name, country , city , state from customer order by country
+
+9) delete those customer who are from australia country
+-> delete from customer where country = 'australia'
+
+10) display customerNumber & name & city,state & country who are from usa
+-> Select customerNumber , name , city , state, country from customer where country = 'usa'
+
+11) Retrieve the names and salaries of the top 5 highest-paid employees from the "Employees" table.
+-> Select name from customer order by salaries desc  limit 5 
+
+12) Increase the salary of all employees in the "Sales" department by 10%.
+-> Update employee set salaries = salaries + salaries * 10 /100 where department = 'Sales';
+
+13) Delete all employees from the "Employees" table who have a salary less than $40,000.
+-> delete from employee where salary < 40000;
+
+14) Retrieve the names of employees from the "Employees" table whose manager ID is NULL 
+-> Select name from employee where managerId is null ;
+
+15) Retrieve the names of employees from the "Employees" table who work in the "IT" department (from the "Departments" table
+-> Select e.name as employee_name from employee as e , department as d where d.name = 'IT' and e.departmentid = d.id ; 
