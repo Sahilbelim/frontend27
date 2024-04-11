@@ -28,3 +28,12 @@ from orderdetail everything , orders - shipping date ,required date ,status with
 get total of customer from customer table  - use internet 
 
 get total of order with price less than 100 - use internet 
+
+API
+---------------------------------------------------------------------
+Get all customer from customer table 
+Get single customer from customer table 
+
+Get all payment from payment table 
+get specific customer's payment from payment table 
+get all payment from payment table which has amount more than user's given amount 
