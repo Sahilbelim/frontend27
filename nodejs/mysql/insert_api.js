@@ -15,9 +15,12 @@ app.post("/students", function (request, response) {
      let dob = request.body.dob;
      let address = request.body.address;
 
-     console.log(`The value of name is ${name} , mobile is ${mobile} , age is ${age} , gender is ${gender} , dob is ${dob} , address is ${address}`);
+     if (name === undefined || mobile === undefined || age === undefined || gender === undefined || dob === undefined || address === undefined) {
+          response.json([{ 'erorr': 'Input is missing ' }]);
+     }
+     else {
+          console.log(`The value of name is ${name} , mobile is ${mobile} , age is ${age} , gender is ${gender} , dob is ${dob} , address is ${address}`);
 
-     if (name !== '' && gender !== '' && age !== '' && dob !== '' && mobile !== '' && address !== '') {
           var sql = `INSERT into students ( name , age , gender , mobile , dob , address ) values ( '${name}' , ${age} , ${gender} , '${mobile}' , '${dob}' , '${address}')`;
           connection.con.query(sql, function (error, result) {
                if (error) {
@@ -34,11 +37,6 @@ app.post("/students", function (request, response) {
                }
           });
      }
-     else {
-          response.json([{ 'message': 'Oops something went wrong' }]);
-     }
-
-
 
 });
 
